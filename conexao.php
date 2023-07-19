@@ -10,7 +10,28 @@ include_once __DIR__."/../config.php";
 function defineConexaoApi () {
   return API_IP;
 } 
+function defineCaminhoLog() {
+  $pasta = 'C:/xampp/htdocs/tslebes/tslog/';
+  return $pasta;
+} 
+function defineConexaoProgress()
+{
+  $progresscfg = "progress.cfg";
+  $progresscfg="progress.cfg";
+  $dlc                = "/usr/dlc";
+  $tmp            = "/u/bsweb/works/";
+  $pf                = "/admcom/bases/wsp2k.pf";
+  $propath        = "/u/bsweb/progr/tslebes/api/app/,/admcom/progr/,";
+  $proginicial = "/u/bsweb/progr/tslebes/api/app/database/progress.p";
 
+  return        array(   "progresscfg" => $progresscfg, 
+                         "dlc" => $dlc,
+                         "pf" => $pf, 
+                         "tmp" => $tmp,
+                         "propath" => $propath,
+                         "proginicial" => $proginicial
+                          );
+}
 function defineConexaoMysql () {
 
     return        array(   "host" => MYSQL_HOST, 
