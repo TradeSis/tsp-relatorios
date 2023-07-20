@@ -11,7 +11,7 @@ function defineConexaoApi () {
   return API_IP;
 } 
 function defineCaminhoLog() {
-  $pasta = 'C:/xampp/htdocs/tslebes/tslog/';
+  $pasta = '/ws/tslog/';
   return $pasta;
 } 
 function defineConexaoProgress()
