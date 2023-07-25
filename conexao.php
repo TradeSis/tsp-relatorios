@@ -16,13 +16,12 @@ function defineCaminhoLog() {
 } 
 function defineConexaoProgress()
 {
-  $progresscfg = "progress.cfg";
   $progresscfg="progress.cfg";
   $dlc                = "/usr/dlc";
-  $tmp            = "/u/bsweb/works/";
+  $tmp            = "/ws/works/";
   $pf                = "/admcom/bases/wsp2k.pf";
-  $propath        = "/u/bsweb/progr/tslebes/api/app/,/admcom/progr/,";
-  $proginicial = "/u/bsweb/progr/tslebes/api/app/database/progress.p";
+  $propath        = "/var/www/html/tslebes/relatorios/,/admcom/progr/,";
+  $proginicial = "/var/www/html/tslebes/sistema/database/progress.p";
 
   return        array(   "progresscfg" => $progresscfg, 
                          "dlc" => $dlc,
@@ -61,11 +60,11 @@ function defineSenderWhatsapp () {
                           );
 
 }
-
-include_once(ROOT.'/painel/database/mysql.php');
-include_once(ROOT.'/painel/database/api.php');
+include_once(ROOT.'/sistema/database/progress.php');
+include_once(ROOT.'/sistema/database/mysql.php');
+include_once(ROOT.'/sistema/database/api.php');
 // helio 26042023
-include_once(ROOT.'/painel/database/functions.php');
-include_once(ROOT.'/painel/database/email.php');
+include_once(ROOT.'/sistema/database/functions.php');
+include_once(ROOT.'/sistema/database/email.php');
 
 ?>
