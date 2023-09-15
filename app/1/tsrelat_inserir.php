@@ -40,7 +40,7 @@ if (!isset($dadosEntrada["tsrelat"])) {
 
     $progr = new chamaprogress();
 
-    $retorno = $progr->executarprogress("relatorios/1/tsrelat_inserir",$conteudoEntrada);
+    $retorno = $progr->executarprogress("relatorios/app/1/tsrelat_inserir",$conteudoEntrada);
 
     fwrite($arquivo,$identificacao."-PROGRESS->".json_encode($retorno)."\n");
 
