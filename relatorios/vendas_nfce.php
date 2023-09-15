@@ -17,17 +17,16 @@ $relatorios = buscaRelatorios($progcod);
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-10">
                         <h3 class="col">Vendas NFCE</h3>
                     </div>
                     <div class="col-1" style="text-align:right">
-                        <a href="#" role="button" class="btn btn-info btn-sm" onClick="window.location.reload()">
+                        <a href="#" role="button" class="btn btn-info btn-sm" style="margin-left:-20px" onClick="window.location.reload()">
                             Atualizar
-                            Relatórios
                         </a>
                     </div>
-                    <div class="col-2" style="text-align:right">
-                        <a href="vendas_nfce_inserir.php" role="button" class="btn btn-success btn-sm">Novo Relatório</a>
+                    <div class="col-1" style="text-align:right">
+                        <a href="vendas_nfce_inserir.php" role="button" class="btn btn-success btn-sm">Novo</a>
                     </div>
                 </div>
             </div>
