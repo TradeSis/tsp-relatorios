@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-        <title>Cadastros</title>
+        <title>Relatórios</title>
 </head>
 <html>
 
