@@ -23,10 +23,20 @@ $logado = $_SESSION['usuario'];
 
 ?>
 
-
 <!DOCTYPE html>
+
+<head>
+    <title>Relatórios</title>
+</head>
 <html>
+
+<body>
 
 <?php
         include_once ROOT. "/vendor/vendor.php";
 ?>
+
+
+</body>
+
+</html>
