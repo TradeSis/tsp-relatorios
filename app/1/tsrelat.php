@@ -12,7 +12,7 @@ $conteudoEntrada=json_encode($jsonEntrada);
 
 
     $progr = new chamaprogress();
-    $retorno = $progr->executarprogress("relatorios/1/tsrelat",$conteudoEntrada);
+    $retorno = $progr->executarprogress("relatorios/app/1/tsrelat",$conteudoEntrada);
 
     $jsonSaida = json_decode($retorno,true);
     
