@@ -1,24 +1,16 @@
 <?php
-include_once(__DIR__ . '/../head.php');
+// lucas 120320204 id884 bootstrap local - alterado head
+include_once '../head.php';
 ?>
 
-<style>
+<!doctype html>
+<html lang="pt-BR">
+<head>
 
-  .nav-link.active:any-link{
-    background-color: transparent;
-    border: 2px solid #DFDFDF;
-    border-radius: 5px 5px 0px 0px;
-    color: #1B4D60;
-  }
+    <?php include_once ROOT . "/vendor/head_css.php"; ?>
 
-  .nav-link:any-link{
-    background-color: #567381;
-    border: 1px solid #DFDFDF;
-    border-radius: 5px 5px 0px 0px;
-    color: #fff;
-  }
-  
-</style>
+</head>
+
 <div class="container-fluid">
   <div class="row mt-3" ><!-- style="border: 1px solid #DFDFDF;" -->
     <div class="col-md-2 ">
@@ -31,49 +23,49 @@ include_once(__DIR__ . '/../head.php');
         //echo "<HR>stab=" . $stab;
         ?>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "relqtdNovo") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "relqtdNovo") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=relqtdNovo" role="tab" style="font-size:12px" >Liquidações diarias p/ periodo</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "loj_cred01") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "loj_cred01") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=loj_cred01" role="tab" style="font-size:12px" >Extrato de cobrança simples</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "loj_cre01_ma") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "loj_cre01_ma") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=loj_cre01_ma" role="tab" style="font-size:12px" >Posição de cliente por periodo - A</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "loj_cre01_lp") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "loj_cre01_lp") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=loj_cre01_lp" role="tab" style="font-size:12px" >Posição de cliente por periodo - B</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "anavenlj") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "anavenlj") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=anavenlj" role="tab" style="font-size:12px" >Conferência notas de transfêrencia</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "vendas_nfce") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "vendas_nfce") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=vendas_nfce" role="tab" style="font-size:12px" >Vendas NFCE</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "resliqnov") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "resliqnov") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=resliqnov" role="tab" style="font-size:12px" >Resumo liquidações p/periodo Novação</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ($stab == "pogersin11") {
+          <a class="nav-link ts-tabConfig <?php if ($stab == "pogersin11") {
             echo " active ";
           } ?>"
             href="?tab=relatorios&stab=pogersin11" role="tab" style="font-size:12px" >Posição financeira vencidos/a vencer</a>
@@ -124,3 +116,9 @@ include_once(__DIR__ . '/../head.php');
 
 </div>
 <!-- /.container -->
+
+<!-- LOCAL PARA COLOCAR OS JS -->
+
+<?php include_once ROOT . "/vendor/footer_js.php"; ?>
+
+<!-- LOCAL PARA COLOCAR OS JS -FIM -->

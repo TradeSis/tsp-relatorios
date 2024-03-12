@@ -1,4 +1,5 @@
 <?php
+// lucas 120320204 id884 bootstrap local - alterado head
 // gabriel 09022023 15:35
 
 include_once '../head.php';
@@ -8,8 +9,13 @@ $progcod="loj_cred01";
 $relatorios = buscaRelatorios($progcod);
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+<head>
+
+    <?php include_once ROOT . "/vendor/head_css.php"; ?>
+
+</head>
 
 <body class="bg-transparent">
 
@@ -96,7 +102,12 @@ $relatorios = buscaRelatorios($progcod);
         
     
     
-    
+<!-- LOCAL PARA COLOCAR OS JS -->
+
+<?php include_once ROOT . "/vendor/footer_js.php"; ?>
+
+<!-- LOCAL PARA COLOCAR OS JS -FIM -->
+
 </body>
 
 </html>
