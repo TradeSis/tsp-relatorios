@@ -1,9 +1,17 @@
 <?php
+// lucas 120320204 id884 bootstrap local - alterado head
 
 include_once('../head.php');
 $filial = explode(".", $_SERVER['REMOTE_ADDR']);
 $filial = $filial[2];
 ?>
+
+<html lang="pt-BR">
+<head>
+
+    <?php include_once ROOT . "/vendor/head_css.php"; ?>
+
+</head>
 
 <body class="bg-transparent">
 
@@ -110,6 +118,11 @@ $filial = $filial[2];
         </div>
     </div>
 
+<!-- LOCAL PARA COLOCAR OS JS -->
+
+<?php include_once ROOT . "/vendor/footer_js.php"; ?>
+
+<!-- LOCAL PARA COLOCAR OS JS -FIM -->
 
 </body>
 
