@@ -1,4 +1,5 @@
 <?php
+// lucas 120320204 id884 bootstrap local - alterado head
 // gabriel 09022023 15:35
 
 include_once '../head.php';
@@ -7,9 +8,14 @@ include_once '../database/relatorios.php';
 
 $relatorios = buscaRelatorios(null,null);
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
 
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+    <?php include_once ROOT . "/vendor/head_css.php"; ?>
+
+</head>
 
 
 
@@ -119,6 +125,12 @@ $relatorios = buscaRelatorios(null,null);
             </div>
         </div>
     </div>
+
+<!-- LOCAL PARA COLOCAR OS JS -->
+
+<?php include_once ROOT . "/vendor/footer_js.php"; ?>
+
+<!-- LOCAL PARA COLOCAR OS JS -FIM -->
 
 </body>
 
